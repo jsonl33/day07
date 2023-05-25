@@ -1,18 +1,18 @@
-package array_list;
+package set;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class T3 {
+public class T2 {
 	public static void main(String[] args) {
 		ArrayList<String> arr = new ArrayList<>();
 		arr.add("1111");
 		arr.add("2222");
 		arr.add("3333");
-		arr.add("4444");
-		System.out.println(arr);
 		
-		for(int i = 0;i<arr.size();i++) {
-			System.out.println(i+"."+arr.get(i));
+		Iterator<String> it = arr.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
 		}
 	}
 }
